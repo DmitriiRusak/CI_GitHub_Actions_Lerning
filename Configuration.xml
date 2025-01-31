@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ConfigFailureExample" configfailurepolicy="continue">
+
+    <test name="Testing Class-1 and Class_2">
+        <classes>
+            <class name="selenium.Class_1Test"></class>
+            <class name="selenium.Class_2Test"></class>
+            <class name="api.tests.dima.RegresTest"></class>
+        </classes>
+    </test>
+</suite>
