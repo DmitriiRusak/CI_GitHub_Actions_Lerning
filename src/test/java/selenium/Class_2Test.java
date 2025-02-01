@@ -13,5 +13,7 @@ public class Class_2Test extends BaseTest {
         WebElement element = webDriverWait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//img[@alt='Udemy']"))));
         System.out.println(element);
 
+
+
     }
 }
