@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class Class_1Test extends BaseTest {
 
+
     @Test
     public void testDaysOfLuckInMenu(){
         String expectedResult = "Горящие товары";
