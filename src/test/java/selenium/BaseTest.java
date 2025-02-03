@@ -14,7 +14,7 @@ public class BaseTest {
 
     public BaseTest(){
         ChromeOptions options= new ChromeOptions();
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
         //driver=new ChromeDriver();
