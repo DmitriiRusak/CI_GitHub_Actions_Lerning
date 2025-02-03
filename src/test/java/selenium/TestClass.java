@@ -31,8 +31,13 @@ public class TestClass extends BaseTest {
         //WebElement element = driver.findElement(By.xpath("//input[@id='u259-search-form-autocomplete--4']"));
         System.out.println(element);
 
+    }
 
-
+    @Test
+    public void testAv(){
+        getDriver().get("https://av.by/");
+        WebElement element = driver.findElement(By.xpath("//div[@class='header__logo']"));
+        System.out.println(element);
     }
 
 }
