@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 import static io.restassured.RestAssured.given;
 
-public class RegresTest {
+public class TestRegres {
 
     protected Specifications specifications = new Specifications();
     protected RequestSpecification requestSpecification;
