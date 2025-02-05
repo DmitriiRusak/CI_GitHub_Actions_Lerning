@@ -16,8 +16,8 @@ public abstract class BaseTest {
         if (driver != null) {
             return driver;
         }
-        //driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
+        //driver = new ChromeDriver();
         return driver;
     }
 
