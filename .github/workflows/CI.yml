@@ -3,10 +3,10 @@ name: Java CI with Maven
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Git clone
         uses: actions/checkout@v4
 
@@ -23,11 +24,6 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
           cache: 'maven'
-
-      - name: Install Google Chrome
-        run: |
-          chmod +x ./scripts/InstallChrome.sh
-                ./scripts/InstallChrome.sh 
 
       - name: Maven test
         run: mvn clean test
